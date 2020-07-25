@@ -1,3 +1,4 @@
+import { LayoutModule } from './dashboard/layout/layout.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -7,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from "./signin/signin.component";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DashboardModule } from './dashboard/dashboard.module'; 
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { SigninComponent } from "./signin/signin.component";
     HomeComponent,
     AboutComponent,
     SignupComponent,
-    SigninComponent
+    SigninComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    DashboardModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

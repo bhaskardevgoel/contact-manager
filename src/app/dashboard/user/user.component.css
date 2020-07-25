@@ -1,0 +1,82 @@
+.brand-name {
+    margin-left: 5vw;
+}
+
+.page-container{
+    display: flex;
+    height: 89%;
+}
+
+.page-content-container{
+    padding:5rem;
+    margin-left: 230px;
+}
+.sidebar{
+    height: 100%;
+    width: 230px;
+    background : #f6f7fc;
+    position: fixed;
+}
+.sidebar a .profile-image{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #333333;
+}
+.list-items{
+    padding-top:50px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    color: #333333;
+    padding: 1rem;
+    font-family: roboto;
+    cursor: pointer;
+}
+
+.list-item.selected {
+    color:#2f80ed;
+}
+
+.list-item:hover{
+    color:#2f80ed;
+}
+
+.list-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0.3rem;
+    background-color:#2f80ed;
+    opacity: 0;
+    transform: scaleY(0);
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.list-item:hover::before {
+    opacity: 0.5;
+    transform: scaleY(0.5);
+}
+
+
+.list-item.selected::before {
+    opacity: 1;
+    transform: scaleY(0.9);
+}
+.list-item span.material-icons{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+.list-item img.profile-image {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: 20px;
+}
