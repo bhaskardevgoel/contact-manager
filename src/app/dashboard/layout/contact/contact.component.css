@@ -25,6 +25,7 @@
 .list-items{
     display: flex;
     justify-content: flex-start;
+    justify-content: space-evenly;
 }
 
 .list-item {
@@ -45,7 +46,8 @@
 .export-btn {
     border: 1px solid #333;
     border-radius: 10px;
-    margin-left: 23vw;
+    display: flex;
+    float: right;
 }
 
 .contact-area {
@@ -53,11 +55,13 @@
 }
 
 .contact-data {
-    max-height: 30vh;
+    max-width: 20vw;
+    min-width: 200px;
     border: 1px solid #333;
     border-radius: 5px;
     margin: 1rem;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .contact-data:hover{
