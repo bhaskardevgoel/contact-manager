@@ -1,5 +1,78 @@
-.brand-name {
-    margin-left: 5vw;
+nav{
+    background: #f6f7fc;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 11%;
+    width: 100%;
+    padding: 0 70px;
+    position: fixed;
+    z-index:1;
+}
+
+nav .logo{
+    color: #2f80ed;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+nav .nav-items {
+    display: flex;
+    flex: 1;
+    list-style: none;
+    justify-content: flex-end;    
+}
+
+nav .nav-items li {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+nav .nav-items li a {
+    color: #333333;
+}
+
+nav .nav-items li a:hover {
+    color: #2f80ed;
+}
+
+nav form {
+    display: flex;
+    height: 40px;
+    border-radius: 10px;
+    padding: 2px;
+    padding-left: 5vw;
+    margin-left: 100px;
+    background: #fff;
+    min-width: 18% !important;
+    margin-left: 20vw;
+
+}
+
+nav form .search-data{
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    color: #333;
+    font-weight: 500;
+    background: none;
+    border: none;
+
+}
+
+nav form button {
+    padding: 0 15px;
+    background: #2f80ed;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px;
 }
 
 .page-container{
@@ -8,11 +81,13 @@
 }
 
 .page-content-container{
-    padding:5rem;
+    padding-left:5rem;
+    padding-top:4.5rem;
     margin-left: 230px;
 }
 .sidebar{
     height: 100%;
+    padding-top: 3%;
     width: 230px;
     background : #f6f7fc;
     position: fixed;
@@ -80,3 +155,4 @@
     margin-left: 1rem;
     font-size: 20px;
 }
+

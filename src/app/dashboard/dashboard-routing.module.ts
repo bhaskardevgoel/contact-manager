@@ -6,7 +6,7 @@ import { NgModule} from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  {path:'user', redirectTo:'user/dashboard', pathMatch:"full"},
+  {path:'user', redirectTo:'user/dashboard/contacts', pathMatch:"full"},
   {path:'user', 
   component: DashboardComponent, 
   children:[
