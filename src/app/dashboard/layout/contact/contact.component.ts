@@ -6,11 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  
-  isFilter: boolean = false;
-    toggleFilter(){
-      this.isFilter = !this.isFilter;
-    }
 
   constructor() { }
 

@@ -1,0 +1,82 @@
+<div class="card-deck container row align-items-center">
+    <div class="card card-area text-center col-sm my-auto">
+        <div class="card-body">
+            <h5 class="card-title">Add Contact via external file</h5>
+            <span class="material-icons icon">add_circle</span>
+            <p class="card-text">Add Contacts by importing Contacts from external csv file.</p>
+            <input type="file" style="opacity: 0.0; position: absolute; top:0; left: 0; bottom: 0; right:0; width: 100%; height:100%; cursor: pointer;" />
+        </div>
+    </div>
+    <div class="card card-area text-center  my-auto col-sm">
+        <div class="card-body" data-toggle="modal" data-target="#addcontact">
+            <h5 class="card-title">Add Contact Manually</h5>
+            <span class="material-icons icon">add_circle</span>
+            <p class="card-text">Add Contacts by entering data manually.</p>
+        </div>
+    </div>
+    <div class="card card-area text-center  my-auto col-sm">
+        <div class="card-body">
+            <h5 class="card-title">Generate Contact Form</h5>
+            <span class="material-icons icon">add_circle</span>
+            <p class="card-text">Add Contacts to your address book by creating a customised Contact Form.</p>
+        </div>
+    </div>
+</div>
+
+<!--add contact modal-->
+<div class="modal fade" id="addcontact" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="addcontactLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addcontactLabel">Enter Contact Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control" id="title" placeholder="Title">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="firstname">First Name</label>
+                            <input type="Text" class="form-control" id="firstname" placeholder="First Name">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="lastname">Last Name</label>
+                            <input type="Text" class="form-control" id="lastname" placeholder="last Name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="phone">Contact Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Phonenumber">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="organisation">Organisation</label>
+                            <input type="text" class="form-control" id="organisation" placeholder="Organisation">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="designation">Designation</label>
+                            <select id="designation" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Create Contact</button>
+            </div>
+        </div>
+    </div>
+</div>

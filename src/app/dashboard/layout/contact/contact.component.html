@@ -23,26 +23,67 @@
           <a  class="list-item" style="color:#Eb5757"><span class="material-icons">delete</span>Delete</a>
         </div>
         <div>
-          <a class="list-item export-btn" style="color:#333;"><span class="material-icons">save_alt</span>Export</a>
+          <a class="list-item export-btn" data-toggle="collapse" href="#collapsefilter" role="button" aria-expanded="false" aria-controls="collapsefilter"><span class="material-icons">filter_alt</span>Filter Contacts</a>
         </div>
         <div>
-          <a class="list-item export-btn" style="color:#333;" (click) = "toggleFilter()"><span class="material-icons">filter_alt</span>Filter Contacts</a>
+          <a class="list-item export-btn"><span class="material-icons">get_app</span>Export Contacts</a>
         </div>
       </div>
     </div>
   </div>
 
-  <div *ngIf = "isFilter" class="filternav">
-    <a href="#">filter 1</a>
-    <a href="#">filter 2</a>
-    <a href="#">filter 3</a>
-  </div>
-  <script>
-
-  </script>
-
-
   <div class="contact-area">
+<!--Filter Panel-->
+
+    <div class="collapse" id="collapsefilter">
+      <div class="card card-body">
+        <form>
+          <div class="form-row">
+            <div class="col">
+              <select class="form-control form-control-sm filter-dropdown">
+                <option value="">Presets</option>
+                <option value="1">preset 1 </option>
+                <option value="2">none</option>
+              </select>
+            </div>
+            <div class="col">
+              <select class="form-control form-control-sm filter-dropdown">
+                <option value="">Title</option>
+                <option value="1">Dr.</option>
+                <option value="2">Prof.</option>
+                <option value="3">All</option>
+              </select>
+            </div>
+            <div class="col">
+              <select class="form-control form-control-sm filter-dropdown">
+                <option value="">Designation</option>
+                <option value="1">Position 1</option>
+                <option value="2">Position 2</option>
+                <option value="3">All</option>
+              </select>
+            </div>
+            <div class="col">
+              <select class="form-control form-control-sm filter-dropdown">
+                <option value="">Organisation</option>
+                <option value="1">Company 1</option>
+                <option value="2">Company 2</option>
+                <option value="3">All</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row" style="padding-top: 10px">
+            <div class="col">
+              <button type="submit" class="btn btn-info btn-block">Filter</button>
+            </div>
+            <div class="col">
+              <button type="submit" class="btn btn-primary btn-block">Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+<!--Contacts Data-->  
     <div class="row">
       <div class="col-sm-4 contact-data" data-toggle="modal" data-target="#contact1">
         <div><img src="../../../../assets/images/profile.png" class="profile-image"></div>
@@ -69,6 +110,7 @@
         <div class="contact-progress-bar"><div class="contact-progress-mid"></div></div>
       </div>
     </div>  
+
 <!-- Modal -->
     <div class="modal fade" id="contact1" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="contact1Label" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">

@@ -4,6 +4,7 @@ import { DashboardComponent } from './dashboard.component';
 import { UserComponent } from './user/user.component';
 import { NgModule} from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AddcontactComponent } from './layout/addcontact/addcontact.component';
 
 const routes: Routes = [
   {path:'user', redirectTo:'user/dashboard/contacts', pathMatch:"full"},
@@ -14,6 +15,7 @@ const routes: Routes = [
     children:[
       {path:'contacts', component: ContactComponent},
       {path:'meetings', component: MeetingsComponent},
+      {path:'addcontact', component:AddcontactComponent}
     ]}
     
   ]

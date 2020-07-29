@@ -4,6 +4,7 @@ import { NavComponent } from './nav/nav.component';
 import { ContactComponent } from './contact/contact.component';
 import { FilterComponent } from './filter/filter.component';
 import { MeetingsComponent } from './meetings/meetings.component';
+import { AddcontactComponent } from './addcontact/addcontact.component';
 
 
 
@@ -12,7 +13,7 @@ import { MeetingsComponent } from './meetings/meetings.component';
     NavComponent, 
     ContactComponent, 
     FilterComponent, 
-    MeetingsComponent
+    MeetingsComponent, AddcontactComponent
   ],
   imports: [
     CommonModule
