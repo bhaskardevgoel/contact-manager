@@ -25,9 +25,23 @@
         <div>
           <a class="list-item export-btn" style="color:#333;"><span class="material-icons">save_alt</span>Export</a>
         </div>
+        <div>
+          <a class="list-item export-btn" style="color:#333;" (click) = "toggleFilter()"><span class="material-icons">filter_alt</span>Filter Contacts</a>
+        </div>
       </div>
     </div>
   </div>
+
+  <div *ngIf = "isFilter" class="filternav">
+    <a href="#">filter 1</a>
+    <a href="#">filter 2</a>
+    <a href="#">filter 3</a>
+  </div>
+  <script>
+
+  </script>
+
+
   <div class="contact-area">
     <div class="row">
       <div class="col-sm-4 contact-data" data-toggle="modal" data-target="#contact1">
